@@ -1,0 +1,171 @@
+<div class="container" style="margin-top: 10px; overflow: hidden;">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-5">
+                    <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+                    <form [formGroup]="registerForm" (ngSubmit)=submitForm(registerForm.value) novalidate>
+                        <div class="form-group">
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="ownerName">Your Name</label>
+                                <input type="text" id="ownerName" class="form-control" formControlName="ownerName" />
+                                <div *ngIf="registerForm.controls['ownerName']?.invalid &&
+                                (registerForm.controls['ownerName']?.dirty ||
+                                registerForm.controls['ownerName']?.touched)" class="alert alert-danger">
+                                    <div *ngIf="registerForm.controls['ownerName'].errors?.['required']">
+                                        Please provide your Name
+                                    </div>
+                                    <div *ngIf="registerForm.controls['ownerName'].errors?.['minlength']">
+                                        Minimum length of name should be 3
+                                    </div>
+                                    <div *ngIf="registerForm.controls['ownerName'].errors?.['maxlength']">
+                                        Name should not be more than 20 characters
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="username">Username</label>
+                                <input type="text" id="username" class="form-control" formControlName="username" />
+                                <div *ngIf="registerForm.controls['username']?.invalid &&
+                                (registerForm.controls['username']?.dirty ||
+                                registerForm.controls['username']?.touched)" class="alert alert-danger">
+                                    <div *ngIf="registerForm.controls['username'].errors?.['required']">
+                                        Please provide your Unique Username
+                                    </div>
+                                    <div *ngIf="registerForm.controls['username'].errors?.['minlength']">
+                                        Minimum length of username should be 3
+                                    </div>
+                                    <div *ngIf="registerForm.controls['username'].errors?.['maxlength']">
+                                        Username should not be more than 20 characters
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="email">Your Email</label>
+                                <input type="email" id="email" class="form-control" formControlName="email" />
+                                <div *ngIf="registerForm.controls['email']?.invalid &&
+                                                        (registerForm.controls['email']?.dirty ||
+                                                        registerForm.controls['email']?.touched)" class="alert alert-danger">
+                                    <div *ngIf="registerForm.controls['email'].errors?.['required']">
+                                        Please provide email in correct format
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="mobile">Mobile</label>
+                                <input type="text" id="mobile" class="form-control" formControlName="mobile" />
+                                <div *ngIf="registerForm.controls['mobile']?.invalid &&
+                                (registerForm.controls['mobile']?.dirty ||
+                                registerForm.controls['mobile']?.touched)" class="alert alert-danger">
+                                    <div *ngIf="registerForm.controls['mobile'].errors?.['required']">
+                                        Please provide your Name
+                                    </div>
+                                    <div *ngIf="registerForm.controls['mobile'].errors?.['minlength']">
+                                        Mobile number should not be less than 10 digits
+                                    </div>
+                                    <div *ngIf="registerForm.controls['mobile'].errors?.['maxlength']">
+                                        Mobile number should not be more than 10 digits
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-outline mb-4">
+                                <label for="location" class="form-label">Location</label>
+                                <select id="location" class="form-select" aria-label="Default select example"
+                                    formControlName="location">
+                                    <option class="label-content" value="null" disabled="true">Select city</option>
+                                    <!-- display diseases list-->
+                                    <option value="{{c.name}}" *ngFor="let c of cityList">{{ c.name }}</option>
+                                </select>
+                                <div *ngIf="registerForm.controls['location']?.invalid &&
+                                (registerForm.controls['location']?.dirty ||
+                                registerForm.controls['location']?.touched)" class="alert alert-danger">
+                                    <div *ngIf="registerForm.controls['location'].errors?.['required']">
+                                        Please select the location
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="password">Password</label>
+                                <input type="password" id="password" class="form-control" formControlName="password" />
+                            </div>
+                            <div *ngIf="f['password'].touched && f['password'].invalid" class="alert alert-danger">
+                                <div *ngIf="f['password'].errors && f['password'].errors['required']">
+                                    Password is Required
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="password2">Repeat your password</label>
+                                <input type="password" id="password2" class="form-control"
+                                    formControlName="password2" />
+                                <div *ngIf="f['password2'].touched && f['password2'].invalid"
+                                    class="alert alert-danger">
+                                    <div *ngIf="f['password2'].errors && f['password2'].errors['required']">
+                                        Password is Required
+                                    </div>
+                                    <div *ngIf="f['password2'].errors && f['password2'].errors['confirmedValidator']">
+                                        Password does not match
+                                    </div>
+                                    <div *ngIf="passwordMatchError">
+                                        Password does not match
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div *ngIf="registerForm.controls['password2']?.invalid &&
+                                (registerForm.controls['password2']?.dirty ||
+                                registerForm.controls['password2']?.touched)">
+                                <div *ngIf="registerForm.controls['password2'].errors?.['required']"
+                                    class="form-error-messages" id="error-no-password">
+                                    <span class="alert alert-danger"> Password is required </span>
+                                </div>
+                                <div *ngIf="registerForm.controls['password2'].errors?.['minlength']"
+                                    class="form-error-messages" id="error-minlength-password">
+                                    <span class="alert alert-danger"> Minimum length Password is required </span>
+                                </div>
+                                <div *ngIf="registerForm.controls['password2'].errors?.['maxlength']"
+                                    class="form-error-messages" id="error-maxlength-password">
+                                    <span class="alert alert-danger"> Maximum length Password is required </span>
+                                </div>
+                                <div *ngIf="registerForm.controls['password2'].errors?.['pattern']"
+                                    class="form-error-messages" id="error-pattern-password">
+                                    <span class="alert alert-danger"> Password Pattern is required </span>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="form-group">
+                            <div class="d-flex justify-content-center">
+                                <button type="submit"
+                                    class="btn btn-success btn-block btn-md gradient-custom-4 text-body"
+                                    [disabled]="!registerForm.valid">Register</button>
+                            </div>
+
+                            <p class="text-center text-muted mt-5 mb-0">Have already an account? <a routerLink="/login"
+                                    class="fw-bold text-body"><u>Login here</u></a></p>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

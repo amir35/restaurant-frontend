@@ -1,0 +1,59 @@
+<h1 mat-dialog-title>Order Details</h1>
+<div mat-dialog-content>
+    <mat-card class="example-card1 border">
+        <mat-card-content>
+            <div class="mat-elevation-z8">
+                <table class="mat-elevation-z8">
+                    <thead>
+                      <tr>
+                        <th class="table-header heading"> Name </th>
+                        <th class="table-header heading"> Email </th>
+                        <th class="table-header heading"> Contact </th>
+                        <th class="table-header heading"> Payment </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="table-header">{{ customer.name }}</td>
+                        <td class="table-header">{{ customer.email }}</td>
+                        <td class="table-header">{{ customer.contact }}</td>
+                        <td class="table-header">{{ customer.payment }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="mat-elevation-z8" style="margin-top: 20px;">
+                <table class="mat-elevation-z8">
+                    <thead>
+                      <tr>
+                        <th class="table-header heading"> Name </th>
+                        <th class="table-header heading"> Category </th>
+                        <th class="table-header heading"> Price </th>
+                        <th class="table-header heading"> Quantity </th>
+                        <th class="table-header heading"> Total </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let ord of orders">
+                        <td class="table-header">{{ ord.name }}</td>
+                        <td class="table-header">{{ ord.category }}</td>
+                        <td class="table-header">{{ ord.price }}</td>
+                        <td class="table-header">{{ ord.quantity }}</td>
+                        <td class="table-header">{{ ord.quantity * ord.price }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </mat-card-content>
+        <mat-card-actions class="custom-card-actions" style="margin-top: 20px;">
+            <button mat-raised-button color="primary" style="width: 300px;"> Total Cost = {{totalPrice}}
+                Rupees</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close (click)="onCancel()">Close</button>
+  <!-- <button mat-button mat-dialog-close cdkFocusInitial (click)="onOk()">Ok</button> -->
+</div>
+

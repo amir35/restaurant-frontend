@@ -1,0 +1,141 @@
+.example-card {
+    height: 60px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 16px;
+}
+
+.example-full-width {
+    width: 500px;
+}
+
+.example-card1 {
+    margin-top: 8px;
+    padding: 16px;
+}
+
+.card-content {
+    display: flex;
+    align-items: left;
+}
+
+button {
+    margin-left: auto;
+    /* Push the button to the right side */
+}
+
+
+.example-form-fields {
+    display: flex;
+    width: 100%;
+    gap: 16px; /* Add some spacing between fields */
+}
+
+.mat-form-field {
+    flex: 1; /* Make form fields stretch to fill the available space */
+    width: 100%; /* Set the width to 100% to cover the full width */
+}
+
+/* Add this to your component's CSS file */
+.custom-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; /* Ensure the buttons span the full width of the card */
+  }
+  
+  /* Add this to adjust the spacing between the buttons if needed */
+  .custom-card-actions button {
+    margin-left: 8px; /* Adjust the margin as needed */
+  }
+
+  .example-card2 {
+    /* height: 60px; */
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 16px;
+}
+
+.card-content2 {
+    display: flex;
+    align-items: center;
+}
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .example-element-diagram {
+    min-width: 80px;
+    /* border: 2px solid black; */
+    padding: 8px;
+    font-weight: lighter;
+    margin: 8px;
+    height: 104px;
+  }
+
+  .example-card4 {
+    /* height: 60px; */
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 16px;
+  }
+
+/* Add this to your component's styles or global styles */
+.disabled-button {
+  background-color: #ffffff; /* White background when disabled */
+  color: #000000; /* Black text when disabled */
+  cursor: not-allowed;
+}
+
+.enabled-button {
+  background-color: green; /* Green background when enabled */
+  color: #ffffff; /* White text when enabled */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  /* margin-top: 10px; */
+}
+
+.table-header {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.heading {
+  background-color: #f2f2f2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.main-content-overlay {
+top: 56px;
+ /* left: 260px;
+width: calc(100% - 260px);  */
+}
+
+.center-spinner {
+  /* Add any additional styles for centering the spinner */
+  width: 50px;
+  height: 50px;
+}

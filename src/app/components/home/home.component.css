@@ -1,0 +1,64 @@
+.example-card {
+  /* max-width: 400px; */
+  margin-bottom: 8px;
+  flex: 0 0 calc(33.333% - 16px); /* Adjust the width as needed */
+  margin: 8px; /* Adjust the margin as needed */
+}
+
+.menu-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+  @media screen and (min-width: 768px) {
+    .menu-item {
+      grid-template-columns: 225px 1fr;
+      gap: 0 1.25rem;
+      max-width: 40rem;
+    }
+    .photo {
+      height: 175px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .section-center {
+      width: 95vw;
+      grid-template-columns: 1fr 1fr;
+    }
+    .photo {
+      height: 150px;
+    }
+  }
+  
+  .example-icon {
+    padding: 0 14px;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.main-content-overlay {
+  top: 56px;
+   /* left: 260px;
+  width: calc(100% - 260px);  */
+}
+
+.center-spinner {
+    /* Add any additional styles for centering the spinner */
+    width: 50px;
+    height: 50px;
+}

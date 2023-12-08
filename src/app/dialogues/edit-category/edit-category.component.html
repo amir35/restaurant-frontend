@@ -1,0 +1,33 @@
+<div style="width: 700px;">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>Edit Category (Category ID: {{category.categoryId}}) </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="example-form" #categoryForm="ngForm" (ngSubmit)="onSubmit(categoryForm)">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Category Name</mat-label>
+                    <input matInput id="categoryName" name="categoryName" placeholder="Ex. Breakfast" value="New Year Special"
+                    [(ngModel)]="category.categoryName">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Select</mat-label>
+                    <mat-select [(ngModel)]="category.categoryStatus" id="categoryStatus" name="categoryStatus" [(value)]="selectedCategory">
+                      <mat-option *ngFor="let status of categoryStatusOptions" [value]="status">{{ status }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                <mat-divider></mat-divider>
+                <mat-card-actions>
+                    <button mat-button type="submit">Update </button>
+                    <button mat-button (click)="onCancel()" type="button">Cancel</button>
+                </mat-card-actions>
+            </form>
+        </mat-card-content>
+
+        <mat-card-footer>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </mat-card-footer>
+    </mat-card>
+</div>

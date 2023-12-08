@@ -1,0 +1,104 @@
+.example-card1 {
+    margin-top: 8px;
+    padding: 16px;
+}
+
+.card-content {
+    display: flex;
+    align-items: left;
+}
+
+/* Style for the table header row */
+.mat-header-row {
+    background-color: blue; /* Change this to your desired blue color */
+    color: white; /* Change this to your desired text color */
+    font-weight: bold; /* Optionally, make the text bold */
+  }
+  
+  /* Style for the table header cells */
+  .mat-header-cell {
+    color: white; /* Change this to your desired text color */
+  }
+
+/*
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  .center-spinner {
+    width: 50px;
+    height: 50px;
+  } */
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+/* .overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+} */
+
+
+.main-content-overlay {
+    top: 56px;
+     /* left: 260px;
+    width: calc(100% - 260px);  */
+}
+
+/* .main-content-overlay {
+  top: 56px;
+  transition: width 0.3s, left 0.3s;
+}
+*/
+
+/* .side-nav-open .main-content-overlay {
+  left: 260px;
+  width: calc(100% - 260px);
+}
+
+.side-nav-closed .main-content-overlay {
+  left: 60px;
+  width: calc(100% - 60px);
+} */
+
+
+.center-spinner {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* side-nav.component.css */
+/* .nav-list-open {
+  width: 200px;
+  background-color: #eee;
+} */
+
+/* Add additional styles for the closed state if needed */
+/* Styles for the closed state */

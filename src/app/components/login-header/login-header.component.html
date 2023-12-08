@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark px-2" style="height: 80px;">
+    <div class="side-nav-button p-2 me-3 text-light" *ngIf="loginService.userLoggedIn()" (click)="SideNavToggled()">
+        <i class="bi bi-list"></i>
+    </div>
+
+    <a class="navbar-brand px-1" href="#"> Bismillah Cafe</a>
+
+    <div class="navbar-collapse">
+        <ul class="navbar-nav me-auto"></ul>
+    </div>
+
+
+    <form class="d-flex me-2">
+        <button class="btn btn-outline-light" *ngIf="loginService.userLoggedIn()" style="margin-right: 5px;">{{ receivedUserFullName }}</button>
+        <button class="btn btn-outline-light" *ngIf="!loginService.userLoggedIn()" routerLink="/login" style="margin-right: 5px;">Login</button>
+        <button class="btn btn-outline-light" *ngIf="!loginService.userLoggedIn()" routerLink="/register" type="submit">SignUp</button>
+        <button class="btn btn-outline-light" *ngIf="loginService.userLoggedIn()" (click)="loginService.logout()"> Logout </button> -->
+    </form>
+
+</nav>

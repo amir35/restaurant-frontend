@@ -1,0 +1,81 @@
+<div style="width: 700px;">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card class="example-card example-full-width" style="margin-bottom: 20px;">
+                <mat-card-header>
+                  <mat-card-title-group>
+                    <mat-card-title style="text-transform: uppercase;">{{mode}} Item</mat-card-title>
+                    <mat-card-subtitle>{{id}}</mat-card-subtitle>
+                    <img mat-card-sm-image [src]="imageUrl" *ngIf="mode === 'edit'" style="margin-bottom: 10px;">
+                    <img mat-card-sm-image src="../../../assets/images/no-user-image.jpeg" *ngIf="mode != 'edit'" style="margin-bottom: 10px;">
+                  </mat-card-title-group>
+                </mat-card-header>
+              </mat-card>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="example-form" [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+                <!-- <mat-form-field class="example-full-width">
+                  <mat-label>Company (disabled)</mat-label>
+                  <input matInput disabled value="Google">
+                </mat-form-field> -->
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Title</mat-label>
+                    <input matInput id="title" name="title" formControlName="title">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="example-full-width">
+                    <mat-label>Select Category</mat-label>
+                    <mat-select formControlName="categoryId" id="categoryId" name="categoryId">
+                        <mat-option [value]="c.categoryId" *ngFor="let c of categories">
+                            {{ c.categoryName }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" floatLabel="always" class="example-full-width">
+                    <mat-label>Price</mat-label>
+                    <input matInput type="number" class="example-right-align" placeholder="0" 
+                    id="price" name="price" formControlName="price">
+                    <span matTextPrefix>&#x20B9;&nbsp;</span> <!-- &#x20B9; is the HTML entity code for the Rupee symbol -->
+                    <span matTextSuffix>.00</span>
+                </mat-form-field>
+
+                <div class="example-full-width border" style="margin-bottom: 15px; display: flex; align-items: center;">
+                    <input class="form-control" type="file" (change)="onFileSelected($event)" 
+                    accept="image/*" id="imageId" name="imageId" formControlName="imageId">
+                    <button mat-raised-button color="primary" (click)="onUpload($event)" type="button" value="upload" style="margin-left: 10px;"
+                    [disabled]="!isFileSelected">Upload </button>
+                </div>
+
+                <div>
+                    <mat-card class="example-full-width" *ngIf="messageStatus" style="height: 50px; margin-bottom: 15px;">
+                      <mat-card-content style="font-size: 16px; display: flex; align-items: center;">
+                        <span>{{ message }}</span>
+                        <mat-icon class="green-icon" style="vertical-align: middle;">check_circle</mat-icon>
+                      </mat-card-content>
+                    </mat-card>
+                  </div>
+                  
+
+                <mat-form-field appearance="fill" class="example-full-width">
+                    <mat-label>Description</mat-label>
+                    <textarea matInput id="description" name="description" formControlName="description"></textarea>
+                </mat-form-field>
+
+                <mat-divider> </mat-divider>
+                <mat-card-actions>
+                    <button mat-raised-button type="submit" style="background-color: #4CAF50; color: #fff;" 
+                    *ngIf="mode === 'add'">Add</button>
+                    <button mat-raised-button type="submit" style="background-color: #4CAF50; color: #fff;"
+                    *ngIf="mode === 'edit'">Update</button>
+                    <button mat-raised-button type="button" (click)="onCancel()" style="margin-left: 10px;">Cancel</button>
+                </mat-card-actions>
+            </form>
+
+        </mat-card-content>
+        <mat-card-footer>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </mat-card-footer>
+    </mat-card>
+</div>

@@ -1,0 +1,1093 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "User 1",
+      "username": "User1",
+      "mobile": "9899999952",
+      "email": "user1122@abc.in",
+      "location": "New Delhi",
+      "password": "User1@123",
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "name": "User 2",
+      "username": "User2",
+      "mobile": "9988776655",
+      "email": "user2@def.com",
+      "location": "kolkata",
+      "password": "User2@123",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "name": "User 3",
+      "username": "User3",
+      "mobile": "9998887775",
+      "email": "user3@ghi.com",
+      "location": "mumbai",
+      "password": "User3@123",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "name": "Amir Ahmad",
+      "username": "amir22",
+      "mobile": "9899999952",
+      "email": "amir22@gmail.com",
+      "location": "mumbai",
+      "password": "Amir@123",
+      "userId": 5
+    },
+    {
+      "id": 5,
+      "name": "Zakiya Inamdar",
+      "username": "zak1612",
+      "email": "zakiyainamdar16@gmail.com",
+      "password": "Zakiya@786"
+    },
+    {
+      "userId": 1684935926817,
+      "name": "Adil Ahmad",
+      "username": "adilshamy",
+      "mobile": "9889409889",
+      "location": "adil@123",
+      "email": "adilshamy@gmail.com",
+      "password": "adil@123",
+      "id": 6
+    },
+    {
+      "userId": 1693769867204,
+      "name": "sample",
+      "username": "sample1",
+      "mobile": "9988776655",
+      "location": "12345",
+      "email": "sample@gmiail.com",
+      "password": "12345",
+      "id": 7
+    }
+  ],
+  "cities": [
+    {
+      "name": "AGARTALA"
+    },
+    {
+      "name": "AGRA"
+    },
+    {
+      "name": "AHMEDABAD"
+    },
+    {
+      "name": "AIZWAL"
+    },
+    {
+      "name": "AJMER"
+    },
+    {
+      "name": "ALLAHABAD"
+    },
+    {
+      "name": "ALLEPPEY"
+    },
+    {
+      "name": "ALIBAUG"
+    },
+    {
+      "name": "ALMORA"
+    },
+    {
+      "name": "ALSISAR"
+    },
+    {
+      "name": "ALWAR"
+    },
+    {
+      "name": "AMBALA"
+    },
+    {
+      "name": "AMLA"
+    },
+    {
+      "name": "AMRITSAR"
+    },
+    {
+      "name": "ANAND"
+    },
+    {
+      "name": "ANKLESHWAR"
+    },
+    {
+      "name": "ASHTAMUDI"
+    },
+    {
+      "name": "AULI"
+    },
+    {
+      "name": "AURANGABAD"
+    },
+    {
+      "name": "BADDI"
+    },
+    {
+      "name": "BADRINATH"
+    },
+    {
+      "name": "BALASINOR"
+    },
+    {
+      "name": "BALRAMPUR"
+    },
+    {
+      "name": "BAMBORA"
+    },
+    {
+      "name": "BANDHAVGARH"
+    },
+    {
+      "name": "BANDIPUR"
+    },
+    {
+      "name": "BANGALORE"
+    },
+    {
+      "name": "BARBIL"
+    },
+    {
+      "name": "BAREILLY"
+    },
+    {
+      "name": "BEHROR"
+    },
+    {
+      "name": "BELGAUM"
+    },
+    {
+      "name": "BERHAMPUR"
+    },
+    {
+      "name": "BETALGHAT"
+    },
+    {
+      "name": "BHARATPUR"
+    },
+    {
+      "name": "BHANDARDARA"
+    },
+    {
+      "name": "BHARUCH"
+    },
+    {
+      "name": "BHAVANGADH"
+    },
+    {
+      "name": "BHAVNAGAR"
+    },
+    {
+      "name": "BHILAI"
+    },
+    {
+      "name": "BHIMTAL"
+    },
+    {
+      "name": "BHOPAL"
+    },
+    {
+      "name": "BHUBANESHWAR"
+    },
+    {
+      "name": "BHUJ"
+    },
+    {
+      "name": "BIKANER"
+    },
+    {
+      "name": "BINSAR"
+    },
+    {
+      "name": "BODHGAYA"
+    },
+    {
+      "name": "BUNDI"
+    },
+    {
+      "name": "CALICUT"
+    },
+    {
+      "name": "CANANNORE"
+    },
+    {
+      "name": "CHAIL"
+    },
+    {
+      "name": "CHAMBA"
+    },
+    {
+      "name": "CHANDIGARH"
+    },
+    {
+      "name": "CHENNAI"
+    },
+    {
+      "name": "CHIKMAGALUR"
+    },
+    {
+      "name": "CHIPLUN"
+    },
+    {
+      "name": "CHITRAKOOT"
+    },
+    {
+      "name": "CHITTORGARH"
+    },
+    {
+      "name": "COIMBATORE"
+    },
+    {
+      "name": "COONOOR"
+    },
+    {
+      "name": "COORG"
+    },
+    {
+      "name": "CORBETT NATIONAL PARK"
+    },
+    {
+      "name": "CUTTACK"
+    },
+    {
+      "name": "DABHOSA"
+    },
+    {
+      "name": "DALHOUSIE"
+    },
+    {
+      "name": "DAMAN"
+    },
+    {
+      "name": "DANDELI"
+    },
+    {
+      "name": "DAPOLI"
+    },
+    {
+      "name": "DARJEELING"
+    },
+    {
+      "name": "DAUSA"
+    },
+    {
+      "name": "DEHRADUN"
+    },
+    {
+      "name": "DHARAMSHALA"
+    },
+    {
+      "name": "DIBRUGARH"
+    },
+    {
+      "name": "DIGHA"
+    },
+    {
+      "name": "DIU"
+    },
+    {
+      "name": "DIVE AGAR"
+    },
+    {
+      "name": "DOOARS"
+    },
+    {
+      "name": "DURGAPUR"
+    },
+    {
+      "name": "DURSHET"
+    },
+    {
+      "name": "DWARKA"
+    },
+    {
+      "name": "FARIDABAD"
+    },
+    {
+      "name": "FIROZABAD"
+    },
+    {
+      "name": "GANGOTRI"
+    },
+    {
+      "name": "GANGTOK"
+    },
+    {
+      "name": "GANAPATIPULE"
+    },
+    {
+      "name": "GANDHIDHAM"
+    },
+    {
+      "name": "GANDHINAGAR"
+    },
+    {
+      "name": "GARHMUKTESHWAR"
+    },
+    {
+      "name": "GARHWAL"
+    },
+    {
+      "name": "GAYA"
+    },
+    {
+      "name": "GHAZIABAD"
+    },
+    {
+      "name": "GOA"
+    },
+    {
+      "name": "GOKHARNA"
+    },
+    {
+      "name": "GONDAL"
+    },
+    {
+      "name": "GORAKHPUR"
+    },
+    {
+      "name": "GREATER NOIDA"
+    },
+    {
+      "name": "GULMARG"
+    },
+    {
+      "name": "GURGAON"
+    },
+    {
+      "name": "GURUVAYOOR"
+    },
+    {
+      "name": "GUWAHATI"
+    },
+    {
+      "name": "GWALIOR"
+    },
+    {
+      "name": "HALEBID"
+    },
+    {
+      "name": "HAMPI"
+    },
+    {
+      "name": "HANSI"
+    },
+    {
+      "name": "HARIDWAR"
+    },
+    {
+      "name": "HASSAN"
+    },
+    {
+      "name": "HOSPET"
+    },
+    {
+      "name": "HOSUR"
+    },
+    {
+      "name": "HUBLI"
+    },
+    {
+      "name": "HYDERABAD"
+    },
+    {
+      "name": "IDUKKI"
+    },
+    {
+      "name": "IGATPURI"
+    },
+    {
+      "name": "IMPHAL"
+    },
+    {
+      "name": "INDORE"
+    },
+    {
+      "name": "JABALPUR"
+    },
+    {
+      "name": "JAIPUR"
+    },
+    {
+      "name": "JAISALMER"
+    },
+    {
+      "name": "JALANDHAR"
+    },
+    {
+      "name": "JALGAON"
+    },
+    {
+      "name": "JAMBUGODHA"
+    },
+    {
+      "name": "JAMMU"
+    },
+    {
+      "name": "JAMNAGAR"
+    },
+    {
+      "name": "JAMSHEDPUR"
+    },
+    {
+      "name": "JAWHAR"
+    },
+    {
+      "name": "JHANSI"
+    },
+    {
+      "name": "JODHPUR"
+    },
+    {
+      "name": "JOJAWAR"
+    },
+    {
+      "name": "JORHAT"
+    },
+    {
+      "name": "JUNAGADH"
+    },
+    {
+      "name": "KABINI"
+    },
+    {
+      "name": "KALIMPONG"
+    },
+    {
+      "name": "KANATAL"
+    },
+    {
+      "name": "KANCHIPURAM"
+    },
+    {
+      "name": "KANHA"
+    },
+    {
+      "name": "KANPUR"
+    },
+    {
+      "name": "KANYAKUMARI"
+    },
+    {
+      "name": "KARGIL"
+    },
+    {
+      "name": "KARJAT"
+    },
+    {
+      "name": "KARNAL"
+    },
+    {
+      "name": "KARUR"
+    },
+    {
+      "name": "KARWAR"
+    },
+    {
+      "name": "KASARGOD"
+    },
+    {
+      "name": "KASAULI"
+    },
+    {
+      "name": "KASHIPUR"
+    },
+    {
+      "name": "KASHID"
+    },
+    {
+      "name": "KATRA"
+    },
+    {
+      "name": "KAUSANI"
+    },
+    {
+      "name": "KAZA"
+    },
+    {
+      "name": "KAZIRANGA"
+    },
+    {
+      "name": "KEDARNATH"
+    },
+    {
+      "name": "KHAJJIAR"
+    },
+    {
+      "name": "KHAJURAHO"
+    },
+    {
+      "name": "KHANDALA"
+    },
+    {
+      "name": "KHIMSAR"
+    },
+    {
+      "name": "KOCHIN"
+    },
+    {
+      "name": "KODAIKANAL"
+    },
+    {
+      "name": "KOLHAPUR"
+    },
+    {
+      "name": "KOLKATA"
+    },
+    {
+      "name": "KOLLAM"
+    },
+    {
+      "name": "KOTA"
+    },
+    {
+      "name": "KOTAGIRI"
+    },
+    {
+      "name": "KOTTAYAM"
+    },
+    {
+      "name": "KOVALAM"
+    },
+    {
+      "name": "KUFRI"
+    },
+    {
+      "name": "KUMBALGARH"
+    },
+    {
+      "name": "KULLU"
+    },
+    {
+      "name": "KUMARAKOM"
+    },
+    {
+      "name": "KUMBAKONAM"
+    },
+    {
+      "name": "KUMILY"
+    },
+    {
+      "name": "KURSEONG"
+    },
+    {
+      "name": "KUSHINAGAR"
+    },
+    {
+      "name": "LACHUNG"
+    },
+    {
+      "name": "LEH"
+    },
+    {
+      "name": "LAKSHADWEEP"
+    },
+    {
+      "name": "LONAVALA"
+    },
+    {
+      "name": "LOTHAL"
+    },
+    {
+      "name": "LUCKNOW"
+    },
+    {
+      "name": "LUDHIANA"
+    },
+    {
+      "name": "LUMBINI"
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": "MADURAI"
+    },
+    {
+      "name": "MAHABALESHWAR"
+    },
+    {
+      "name": "MAHABALIPURAM"
+    },
+    {
+      "name": "MALAPPURAM"
+    },
+    {
+      "name": "MALPE"
+    },
+    {
+      "name": "MALSHEJ GHAT"
+    },
+    {
+      "name": "MALVAN"
+    },
+    {
+      "name": "MANALI"
+    },
+    {
+      "name": "MANDAVI"
+    },
+    {
+      "name": "MANDAWA"
+    },
+    {
+      "name": "MANESAR"
+    },
+    {
+      "name": "MARARRI"
+    },
+    {
+      "name": "MANDORMONI"
+    },
+    {
+      "name": "MANGALORE"
+    },
+    {
+      "name": "MANMAD"
+    },
+    {
+      "name": "MARCHULA"
+    },
+    {
+      "name": "MATHERAN"
+    },
+    {
+      "name": "MATHURA"
+    },
+    {
+      "name": "MCLEODGANJ"
+    },
+    {
+      "name": "MOHALI"
+    },
+    {
+      "name": "MOUNT ABU"
+    },
+    {
+      "name": "MORADABAD"
+    },
+    {
+      "name": "MORBI"
+    },
+    {
+      "name": "MUKTESHWAR"
+    },
+    {
+      "name": "MUMBAI"
+    },
+    {
+      "name": "MUNDRA"
+    },
+    {
+      "name": "MUNNAR"
+    },
+    {
+      "name": "MURUD JANJIRA"
+    },
+    {
+      "name": "MUSSOORIE"
+    },
+    {
+      "name": "MYSORE"
+    },
+    {
+      "name": "NADUKANI"
+    },
+    {
+      "name": "NAGAPATTINAM"
+    },
+    {
+      "name": "NAGARHOLE"
+    },
+    {
+      "name": "NAGAUR FORT"
+    },
+    {
+      "name": "NAGOTHANE"
+    },
+    {
+      "name": "NAGPUR"
+    },
+    {
+      "name": "NAHAN"
+    },
+    {
+      "name": "NAINITAL"
+    },
+    {
+      "name": "NALDHERA"
+    },
+    {
+      "name": "NANDED"
+    },
+    {
+      "name": "NAPNE"
+    },
+    {
+      "name": "NASIK"
+    },
+    {
+      "name": "NAVI MUMBAI"
+    },
+    {
+      "name": "NERAL"
+    },
+    {
+      "name": "NEW DELHI"
+    },
+    {
+      "name": "NILGIRI"
+    },
+    {
+      "name": "NOIDA"
+    },
+    {
+      "name": "OOTY"
+    },
+    {
+      "name": "ORCHHA"
+    },
+    {
+      "name": "OSIAN"
+    },
+    {
+      "name": "PACHMARHI"
+    },
+    {
+      "name": "PALAMPUR"
+    },
+    {
+      "name": "PALANPUR"
+    },
+    {
+      "name": "PALI"
+    },
+    {
+      "name": "PAHALGAM"
+    },
+    {
+      "name": "PALITANA"
+    },
+    {
+      "name": "PALLAKAD"
+    },
+    {
+      "name": "PANCHGANI"
+    },
+    {
+      "name": "PANCHKULA"
+    },
+    {
+      "name": "PANNA"
+    },
+    {
+      "name": "PANHALA"
+    },
+    {
+      "name": "PANVEL"
+    },
+    {
+      "name": "PANTNAGAR"
+    },
+    {
+      "name": "PARWANOO"
+    },
+    {
+      "name": "PATIALA"
+    },
+    {
+      "name": "PATHANKOT"
+    },
+    {
+      "name": "PATNA"
+    },
+    {
+      "name": "PATNITOP"
+    },
+    {
+      "name": "PELLING"
+    },
+    {
+      "name": "PENCH"
+    },
+    {
+      "name": "PHAGWARA"
+    },
+    {
+      "name": "PHALODI"
+    },
+    {
+      "name": "PINJORE"
+    },
+    {
+      "name": "PONDICHERRY"
+    },
+    {
+      "name": "POOVAR"
+    },
+    {
+      "name": "PORBANDAR"
+    },
+    {
+      "name": "PORT BLAIR"
+    },
+    {
+      "name": "POSHINA"
+    },
+    {
+      "name": "PRAGPUR"
+    },
+    {
+      "name": "PUNE"
+    },
+    {
+      "name": "PURI"
+    },
+    {
+      "name": "PUSKHAR"
+    },
+    {
+      "name": "PUTTAPARTHI"
+    },
+    {
+      "name": "RAI BAREILLY"
+    },
+    {
+      "name": "RAICHAK"
+    },
+    {
+      "name": "RAIPUR"
+    },
+    {
+      "name": "RAJASTHAN"
+    },
+    {
+      "name": "RAJGIR"
+    },
+    {
+      "name": "RAJKOT"
+    },
+    {
+      "name": "RAJPIPLA"
+    },
+    {
+      "name": "RAJSAMAND"
+    },
+    {
+      "name": "RAJAHMUNDRY"
+    },
+    {
+      "name": "RAMESHWARAM"
+    },
+    {
+      "name": "RAM NAGAR"
+    },
+    {
+      "name": "RAMGARH"
+    },
+    {
+      "name": "RANAKPUR"
+    },
+    {
+      "name": "RANCHI"
+    },
+    {
+      "name": "RANIKHET"
+    },
+    {
+      "name": "RANNY"
+    },
+    {
+      "name": "RANTHAMBORE"
+    },
+    {
+      "name": "RATNAGIRI"
+    },
+    {
+      "name": "RAVANGLA"
+    },
+    {
+      "name": "RISHIKESH"
+    },
+    {
+      "name": "RISHYAP"
+    },
+    {
+      "name": "ROHETGARH"
+    },
+    {
+      "name": "ROURKELA"
+    },
+    {
+      "name": "SAJAN"
+    },
+    {
+      "name": "SALEM"
+    },
+    {
+      "name": "SAPUTARA"
+    },
+    {
+      "name": "SASAN GIR"
+    },
+    {
+      "name": "SATTAL"
+    },
+    {
+      "name": "SAWAI MADHOPUR"
+    },
+    {
+      "name": "SAWANTWADI"
+    },
+    {
+      "name": "SECUNDERABAD"
+    },
+    {
+      "name": "SHILLONG"
+    },
+    {
+      "name": "SHIMLA"
+    },
+    {
+      "name": "SHIMLIPAL"
+    },
+    {
+      "name": "SHIRDI"
+    },
+    {
+      "name": "SHARAVANBELGOLA"
+    },
+    {
+      "name": "SHIVANASAMUDRA"
+    },
+    {
+      "name": "SIANA"
+    },
+    {
+      "name": "SILIGURI"
+    },
+    {
+      "name": "SILVASSA"
+    },
+    {
+      "name": "SIVAGANGA DISTRICT"
+    },
+    {
+      "name": "SOLAN"
+    },
+    {
+      "name": "SONAULI"
+    },
+    {
+      "name": "SRINAGAR"
+    },
+    {
+      "name": "SUNDERBAN"
+    },
+    {
+      "name": "SURAT"
+    },
+    {
+      "name": "TANJORE"
+    },
+    {
+      "name": "TAPOLA"
+    },
+    {
+      "name": "TARAPITH"
+    },
+    {
+      "name": "THANE"
+    },
+    {
+      "name": "THEKKADY"
+    },
+    {
+      "name": "THIRVANNAMALAI"
+    },
+    {
+      "name": "THIRUVANANTHAPURAM"
+    },
+    {
+      "name": "TIRUCHIRAPALLI"
+    },
+    {
+      "name": "TIRUPUR"
+    },
+    {
+      "name": "TIRUPATI"
+    },
+    {
+      "name": "THRISSUR"
+    },
+    {
+      "name": "UDAIPUR"
+    },
+    {
+      "name": "UDHAMPUR"
+    },
+    {
+      "name": "UDUPI"
+    },
+    {
+      "name": "UJJAIN"
+    },
+    {
+      "name": "UTTARKASHI"
+    },
+    {
+      "name": "VADODARA"
+    },
+    {
+      "name": "VAGAMON"
+    },
+    {
+      "name": "VARKALA"
+    },
+    {
+      "name": "VAPI"
+    },
+    {
+      "name": "VARANASI"
+    },
+    {
+      "name": "VELANKANNI"
+    },
+    {
+      "name": "VELLORE"
+    },
+    {
+      "name": "VERAVAL"
+    },
+    {
+      "name": "VIJAYAWADA"
+    },
+    {
+      "name": "VIKRAMGADH"
+    },
+    {
+      "name": "VISHAKAPATNAM"
+    },
+    {
+      "name": "WAYANAD"
+    },
+    {
+      "name": "WANKANER"
+    },
+    {
+      "name": "YAMUNOTRI"
+    },
+    {
+      "name": "YERCAUD"
+    },
+    {
+      "name": "YUKSOM"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+<mat-card class="example-card1 border">
+
+    <mat-form-field>
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. BILL-Number" #input>
+    </mat-form-field>
+
+    <!-- Add this div to show the MatSpinner in the main content area -->
+    <div *ngIf="loading" class="overlay main-content-overlay" 
+    [style.width]="sideNavStatus ? 'calc(100% - 260px)' : 'calc(100% - 60px)'" 
+    [style.left]="sideNavStatus ? '260px' : '60px'">
+        <mat-spinner class="center-spinner"></mat-spinner>
+    </div>
+
+    <!-- <div *ngIf="loading" class="overlay main-content-overlay"
+        [ngClass]="{'side-nav-open': sideNavStatus, 'side-nav-closed': !sideNavStatus}">
+        <mat-spinner class="center-spinner"></mat-spinner>
+    </div> -->
+
+    <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort>
+
+            <!-- Id Column -->
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Id </th>
+                <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+            </ng-container>
+
+            <!-- UUID Column -->
+            <ng-container matColumnDef="uuid">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> UUID </th>
+                <td mat-cell *matCellDef="let row"> {{row.uuid}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+            </ng-container>
+
+            <!-- Contact Column -->
+            <ng-container matColumnDef="contact">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Contact </th>
+                <td mat-cell *matCellDef="let row"> {{row.contactNumber}} </td>
+            </ng-container>
+
+            <!-- Email Column -->
+            <ng-container matColumnDef="email">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+                <td mat-cell *matCellDef="let row"> {{row.email}} </td>
+            </ng-container>
+
+            <!-- Payment Column -->
+            <ng-container matColumnDef="payment">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Payment </th>
+                <td mat-cell *matCellDef="let row"> {{row.paymentMethod}} </td>
+            </ng-container>
+
+            <!-- Total Column -->
+            <ng-container matColumnDef="total">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Total </th>
+                <td mat-cell *matCellDef="let row"> {{row.total}} </td>
+            </ng-container>
+
+            <!-- Action Column -->
+            <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
+                <td mat-cell *matCellDef="let row">
+                    <div class="example-button-container">
+
+                        <button mat-icon-button color="green" #tooltip="matTooltip" matTooltip="view the bill"
+                            [matTooltipPosition]="'below'" (mouseout)="hideTooltip()" (click)="showBillDetails(row.id)">
+                            <mat-icon>remove_red_eye</mat-icon>
+                        </button>
+
+                        <button mat-icon-button color="primary" #tooltip="matTooltip" matTooltip="print the bill"
+                            [matTooltipPosition]="'below'" (mouseout)="hideTooltip()" (click)="downloadBill(row.id)">
+                            <mat-icon>print</mat-icon>
+                        </button>
+
+                        <button mat-icon-button color="warn" #tooltip="matTooltip" matTooltip="delete this record"
+                            [matTooltipPosition]="'below'" (mouseout)="hideTooltip()"
+                            (click)="deleteBillDetails(row.id)">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </div>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[10, 20, 50, 100]" aria-label="Select page of users"></mat-paginator>
+    </div>
+
+</mat-card>

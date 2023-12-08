@@ -1,0 +1,56 @@
+<!-- <mat-card class="example-card border">
+  <div class="card-content">
+    <div class="display-area p-3" [ngClass]="{ 'display-area-shrink': sideNavStatus}">
+      <div class="card mt-4">
+        <h4 class="card-header">You're logged in with Angular 14 & Basic HTTP Authentication!!</h4>
+        <div class="card-body">
+          <h6>Users from secure api end point</h6>
+          <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+          <ul *ngIf="users">
+            <li *ngFor="let user of users"> Welcome {{user.ownerName}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card> -->
+
+<!-- <div class="container-fluid"> -->
+
+<!-- Add this div to show the MatSpinner in the main content area -->
+<div *ngIf="loading" class="overlay main-content-overlay" 
+[style.width]="sideNavStatus ? 'calc(100% - 260px)' : 'calc(100% - 60px)'" 
+[style.left]="sideNavStatus ? '260px' : '60px'">
+    <mat-spinner class="center-spinner"></mat-spinner>
+</div>
+
+<mat-card class="example-card border">
+
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Our Menu</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-card class="example-card1 border">
+    <mat-tab-group mat-align-tabs="center" (selectedTabChange)="filterItems($event)">
+      <mat-tab [label]="category" *ngFor="let category of categories">
+        <div class="menu-items-container">
+          <mat-card class="example-card" *ngFor="let menu of menuItems">
+            <mat-card-title-group>
+              <mat-card-title style="padding-left: 5px; text-transform: uppercase;">{{ menu.title }}</mat-card-title>
+              <mat-card-subtitle style="padding-left: 5px;">{{ menu.price }}</mat-card-subtitle>
+              <img mat-card-md-image [src]="imageUrls[menu.imageId]" alt="{{ menu.title }}">
+            </mat-card-title-group>
+            <mat-card-content>
+              {{menu.description }}
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</mat-card>
+
+<!-- </div> -->
